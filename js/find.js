@@ -55,3 +55,10 @@ ensureNoSubArrays([1, 2, 3, 4]) // true
  * You need to determine if a value in an array exists and you have to determine this by using a callback
  * A simple alternative to using filter and accessing the first element of the filtered array
  */
+
+function myFind(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i], i, arr) === true) return arr[i]
+  }
+  return undefined
+}

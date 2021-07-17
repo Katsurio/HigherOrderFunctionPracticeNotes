@@ -48,3 +48,10 @@ findPositionOfBoolean(['no booleans', 'around', 'these parts']) // -1
  * You need to determine the index of a value in an array if it exists and you have to determine this by using a callback
  * A better version of indexOf to be used when a callback is necessary
  */
+
+function myFindIndex(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i], i, arr) === true) return i
+  }
+  return -1
+}
