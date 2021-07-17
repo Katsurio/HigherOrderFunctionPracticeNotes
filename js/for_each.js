@@ -31,7 +31,6 @@ myForEach(arr, (item) => {
     console.log(total += item);
 })
 
-myForEach(arr);
 
 arr.forEach( (item, i) => {
     let total = 0;

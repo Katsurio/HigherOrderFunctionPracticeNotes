@@ -7,14 +7,13 @@
  */
 
 //  An Example
- let numbers = [1,2,3];
+//  let numbers = [1,2,3];
  
  numbers.every(function(value, index, array){
    return value > 0;
  });
  
  // true
- let numbers = [1,2,3];
  
  numbers.every(function(value, index, array){
    return value > 2;
